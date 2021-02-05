@@ -36,3 +36,52 @@ h1 {
     text-align: center;
     font-weight: 600;
 }
+
+
+#standing-human {
+    /*animation: salto 2s ease-in-out;
+    transform-origin: center;*/
+}
+
+#Bottom {
+    animation: salto 2s ease-in-out;
+    transform-origin: center;
+}
+
+.Bottom-Left {
+    animation: walk-left-leg 1.5s ease-in 1s infinite alternate none running;
+}
+
+.Bottom-Right {
+    animation: walk-right-leg 1.5s ease 1s infinite alternate-reverse none running;
+}
+
+@keyframes salto {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes walk-left-leg {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(15deg);
+    }
+}
+
+@keyframes walk-right-leg {
+    from {
+        transform: rotateZ(-30deg);
+    }
+
+    to {
+        transform: rotateZ(0deg);
+    }
+}
